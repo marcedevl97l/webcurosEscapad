@@ -16,7 +16,7 @@ import { RouterModule } from '@angular/router';
               <div class="w-8 h-8 bg-primary-600 dark:bg-primary-500 rounded-lg flex items-center justify-center">
                 <span class="text-white font-bold text-lg">E</span>
               </div>
-              <span class="text-lg md:text-xl font-bold">Scapad</span>
+              <span class="text-lg md:text-xl font-bold">Escapad</span>
             </div>
             <p class="text-gray-300 dark:text-gray-400 mb-4 max-w-md text-sm md:text-base">
               Somos un instituto líder en educación en línea, comprometido con brindar cursos de alta calidad 
@@ -66,7 +66,7 @@ import { RouterModule } from '@angular/router';
 
         <div class="border-t border-gray-800 dark:border-gray-700 mt-6 md:mt-8 pt-6 md:pt-8 text-center">
           <p class="text-gray-400 dark:text-gray-500 text-sm md:text-base">
-            © 2024 EduCursos. Todos los derechos reservados.
+            © 2024 Escapad. Todos los derechos reservados.
           </p>
         </div>
       </div>
