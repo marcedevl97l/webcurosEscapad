@@ -16,11 +16,7 @@ import { ThemeService } from '../../services/theme.service';
           <!-- Logo -->
           <div class="flex items-center">
             <a routerLink="/" class="flex items-center space-x-2">
-              <div
-                class="w-8 h-8 bg-primary-600 dark:bg-primary-500 rounded-lg flex items-center justify-center"
-              >
-                <span class="text-white font-bold text-lg">E</span>
-              </div>
+              <img src="assets/images/logoescapad.svg" alt="Logo Escapad" class="w-12 h-12" />
               <span
                 class="text-lg md:text-xl font-bold text-gray-900 dark:text-white"
                 >Escapad</span
