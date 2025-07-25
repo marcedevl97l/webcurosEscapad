@@ -160,9 +160,7 @@ import { RouterModule } from '@angular/router';
         </div>
 
         <!-- Scroll indicator -->
-        <div
-          class="mt-8 animate-fade-in-up animation-delay-1000"
-        >
+        <div class="mt-8 animate-fade-in-up animation-delay-1000">
           <div
             class="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center mx-auto animate-bounce"
           >
@@ -175,8 +173,10 @@ import { RouterModule } from '@angular/router';
     </section>
 
     <!-- Estadísticas -->
-    <section class="py-12 md:py-16 bg-white dark:bg-gray-800">
-      <div class="container-custom px-4">
+    <section
+      class="py-12 md:py-16 bg-white dark:bg-gray-800 relative overflow-hidden"
+    >
+      <div class="container-custom px-4 relative z-10">
         <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 text-center">
           <div class="animate-fade-in-up animation-delay-100">
             <div
@@ -223,8 +223,17 @@ import { RouterModule } from '@angular/router';
     </section>
 
     <!-- Características -->
-    <section class="py-16 md:py-20 bg-gray-50 dark:bg-gray-900">
-      <div class="container-custom px-4">
+    <section
+      class="py-16 md:py-20 bg-gray-50 dark:bg-gray-900 relative overflow-hidden"
+    >
+      <!-- Logo de fondo difuminado -->
+      <img
+        src="assets/images/logoescapad.svg"
+        alt="Logo Escapad difuminado"
+        class="pointer-events-none select-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] md:w-[650px] opacity-10 blur-[2px] z-0"
+        aria-hidden="true"
+      />
+      <div class="container-custom px-4 relative z-10">
         <div class="text-center mb-12 md:mb-16">
           <h2
             class="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-4"
@@ -504,9 +513,16 @@ import { RouterModule } from '@angular/router';
 
     <!-- CTA Section -->
     <section
-      class="py-16 md:py-20 bg-primary-600 dark:bg-primary-700 text-white"
+      class="py-16 md:py-20 bg-primary-600 dark:bg-primary-700 text-white relative overflow-hidden"
     >
-      <div class="container-custom text-center px-4">
+      <!-- Logo de fondo difuminado para CTA -->
+      <img
+        src="assets/images/logoescapad.svg"
+        alt="Logo Escapad difuminado"
+        class="pointer-events-none select-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-96 md:w-[500px] opacity-10 blur-sm z-0"
+        aria-hidden="true"
+      />
+      <div class="container-custom text-center px-4 relative z-10">
         <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6">
           ¿Listo para comenzar tu aprendizaje?
         </h2>
@@ -522,6 +538,17 @@ import { RouterModule } from '@angular/router';
         </a>
       </div>
     </section>
+
+    <!-- Botón flotante de WhatsApp -->
+    <a
+      href="https://wa.me/34612345678?text=Hola,%20me%20interesa%20saber%20más%20sobre%20los%20cursos%20de%20Escapad"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 animate-pulse"
+      aria-label="Contactar por WhatsApp"
+    >
+      <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
   `,
   styles: [
     `
